@@ -51,7 +51,7 @@ body{
     position: relative;
     height:80px;
     width:100%;
-    background:url(../images/headback.jpg)repeat-x;
+    background:url(../images/headback.jpg)no-repeat;
     background-size:cover;
 }
 
@@ -99,6 +99,53 @@ body{
     line-height:30px;
     margin:0 5px;
 }
+
+.gps{
+    width:280px;
+    background-color:rgb(227,228,229);
+}
+
+.gps li{
+    border-left:1px solid lightgray;
+    padding:0 12px;
+    border-right:1px solid lightgray;
+    display: none;
+}
+
+.gps-choice{
+    padding-left:10px;
+    width:60px;
+    text-align: center;
+    border-left:.5px solid transparent;
+    border-right:.5px solid transparent;
+    position: relative;
+}
+
+.gps>li span{
+    margin:0 10px;
+    height:34px;
+    line-height:34px;
+    cursor: pointer;
+}
+
+
+.gps-logo{
+    height:16px;
+    width:16px;
+    position: absolute;
+    top:7px;
+    left:12px;
+}
+
+.active{
+    background-color:red;
+    color:#fff;
+}
+
+
+
+
+
 
 
 
