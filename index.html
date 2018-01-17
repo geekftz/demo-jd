@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/swiper.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="scripts/index.js"></script>
-    <link rel="stylesheet" href="styles/index.css">
-    
+    <script src="scripts/swiper.min.js"></script>
 </head>
 <body>
     <div id="head-back">
@@ -19,7 +19,7 @@
     <div id="navbar">
         <div class="container">
             <ul class="gps">
-                <h6 class="gps-choice"><img class="gps-logo" src="images/地理位置.png" alt="">北京</h6>
+                <h6 class="gps-choice"><img class="gps-logo" style="color:red" src="images/位置.svg" alt="">北京</h6>
                 <li>
                     <span class="active">北京</span>
                     <span>上海</span>
@@ -72,17 +72,344 @@
                 
             </ul>
             <ul id="list1">
-                <li><h6>你好，请登陆</h6></li>
-                <li><h6 class="loginOut" style="color:red">免费注册</h6></li>
-                <li><h6>我的订单</h6></li>
-                <li><h6>我的京东</h6></li>
-                <li><h6>京东会员</h6></li>
-                <li><h6>企业采购</h6></li>
-                <li><h6>客户服务</h6></li>
-                <li><h6>网站导航</h6></li>
-                <li><h6>手机京东</h6></li>
+                <li><h6>你好，请登陆</span></h6></li>
+                <li><h6 class="loginOut" style="color:red"><span class="bord">免费注册</span></h6></li>
+                <li><h6><span class="bord">我的订单</span></h6></li>
+                <li id="order-list">
+                    <h6 class="order-text">
+                        <img class="order-img" src="images/返回4.png">
+                        <span class="bord" style="padding-right:20px;">我的京东</span>
+                    </h6>
+                    <ul class="order">
+                        <li><span>待处理订单</span><span class="order-right">返修退换货</span></li>
+                        <li><span>降价商品</span><span class="order-right">消息</span></li>
+                        <li><span>我的问答</span><span class="order-right">我的关注</span></li>
+                        <hr>
+                        <li><span>我的京豆</span><span class="order-right">我的白条</span></li>
+                        <li style="border-bottom:.5px solid lightgray"><span>我的优惠券</span><span class="order-right">我的理财</span></li>
+                    </ul>
+                </li>
+                <li><h6><span class="bord">京东会员</span></h6></li>
+                <li><h6><span class="bord">企业采购</span></h6></li>
+                <li id="service-list">
+                    <h6 class="service-text">
+                        <img class="order-img" src="images/返回4.png">
+                        <span class="bord" style="padding-right:20px;">客户服务</span>
+                    </h6>
+                    <ul class="service">
+                        <li><p>客户</p></li>
+                        <li><span>帮助中心</span><span  class="order-right">售后服务</span></li>
+                        <li><span>在线客服</span><span class="order-right">意见建议</span></li>
+                        <li><span>电话客服</span><span class="order-right">客服邮箱</span></li>
+                        <li><span>金融咨询</span><span class="order-right">售全球客服</span></li>
+                        <li><p>商户</p></li>
+                        <li><span>合作招商</span><span class="order-right">学习中心</span></li>
+                        <li><span>商家后台</span><span class="order-right">京麦工作台</span></li>
+                        <li style="border-bottom:.5px solid lightgray"><span>商家帮助</span><span class="order-right">规则平台</span></li>
+                    </ul>
+                </li>
+                <li id="navigate-list">
+                    <h6 class="navigate-text">
+                        <img class="order-img" src="images/返回4.png">
+                        <span  class="bord" style="padding-right:20px;">网站导航</span>
+                    </h6>
+                    <ul class="navigate">
+                        <li style="border-bottom:.5px solid lightgray">
+                            <div class="navigate-part">
+                                <ul class="ng-ul">
+                                    <li><p>行业频道</p></li>
+                                    <li>
+                                        <span>手机智能</span>
+                                        <span>数码玩3C</span>
+                                        <span>电脑办公</span>
+                                    </li>
+                                    <li>
+                                        <span>手机智能</span>
+                                        <span>数码玩3C</span>
+                                        <span>电脑办公</span>
+                                    </li>
+                                    <li>
+                                        <span>手机智能</span>
+                                        <span>数码玩3C</span>
+                                        <span>电脑办公</span>
+                                    </li>
+                                    <li>
+                                        <span>手机智能</span>
+                                        <span>数码玩3C</span>
+                                        <span>电脑办公</span>
+                                    </li>
+                                    <li>
+                                        <span>手机智能</span>
+                                        <span>数码玩3C</span>
+                                        <span>电脑办公</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="navigate-part">
+                                <ul class="ng-ul">
+                                    <li><p>行业频道</p></li>
+                                    <li>
+                                        <span>手机智能</span>
+                                        <span>数码玩3C</span>
+                                        <span>电脑办公</span>
+                                    </li>
+                                    <li>
+                                        <span>手机智能</span>
+                                        <span>数码玩3C</span>
+                                        <span>电脑办公</span>
+                                    </li>
+                                    <li>
+                                        <span>手机智能</span>
+                                        <span>数码玩3C</span>
+                                        <span>电脑办公</span>
+                                    </li>
+                                    <li>
+                                        <span>手机智能</span>
+                                        <span>数码玩3C</span>
+                                        <span>电脑办公</span>
+                                    </li>
+                                    <li>
+                                        <span>手机智能</span>
+                                        <span>数码玩3C</span>
+                                        <span>电脑办公</span>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="navigate-part">
+                                <ul class="ng-ul">
+                                    <li><p>行业频道</p></li>
+                                    <li>
+                                        <span>手机智能</span>
+                                        <span>数码玩3C</span>
+                                        <span>电脑办公</span>
+                                    </li>
+                                    <li>
+                                        <span>手机智能</span>
+                                        <span>数码玩3C</span>
+                                        <span>电脑办公</span>
+                                    </li>
+                                    <li>
+                                        <span>手机智能</span>
+                                        <span>数码玩3C</span>
+                                        <span>电脑办公</span>
+                                    </li>
+                                    <li>
+                                        <span>手机智能</span>
+                                        <span>数码玩3C</span>
+                                        <span>电脑办公</span>
+                                    </li>
+                                    <li>
+                                        <span>手机智能</span>
+                                        <span>数码玩3C</span>
+                                        <span>电脑办公</span>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="navigate-part">
+                                <ul class="ng-ul">
+                                    <li><p>行业频道</p></li>
+                                    <li>
+                                        <span>手机智能</span>
+                                        <span>数码玩3C</span>
+                                        <span>电脑办公</span>
+                                    </li>
+                                    <li>
+                                        <span>手机智能</span>
+                                        <span>数码玩3C</span>
+                                        <span>电脑办公</span>
+                                    </li>
+                                    <li>
+                                        <span>手机智能</span>
+                                        <span>数码玩3C</span>
+                                        <span>电脑办公</span>
+                                    </li>
+                                    <li>
+                                        <span>手机智能</span>
+                                        <span>数码玩3C</span>
+                                        <span>电脑办公</span>
+                                    </li>
+                                    <li>
+                                        <span>手机智能</span>
+                                        <span>数码玩3C</span>
+                                        <span>电脑办公</span>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li id="phone-list">
+                    <h6 class="phone-text">手机京东</h6>
+                    <ul class="phone">
+                        <li>
+                            <div class="ph-left">
+                                <img src="images/QRcode1.png">
+
+                            </div>
+                            <div class="ph-right">
+                                <p class="ph-t1">手机京东</p>
+                                <p class="ph-t2">新人专享大礼包</p>
+                                <img src="images/iosandroid.png">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ph-left">
+                                <img src="images/QRcode2.jpg">
+
+                            </div>
+                            <div class="ph-right">
+                                <p class="ph-t1">手机京东</p>
+                                <p class="ph-t2">新人专享大礼包</p>
+                                <img src="images/iosandroid.png">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ph-left">
+                                <img src="images/QRcode3.jpg">
+
+                            </div>
+                            <div class="ph-right">
+                                <p class="ph-t1">手机京东</p>
+                                <p class="ph-t2">新人专享大礼包</p>
+                                <img src="images/iosandroid.png">
+                            </div>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
+    <div id="main">
+        <div class="container">
+            <div class="main-left">
+                <img class="img-logo" src="images/logo.png">
+            </div>
+            <div class="main-right">
+                <div id="search">
+                    <div class="sh">
+                        <div class="sh-input">
+                            <input id="ipt" type="text" placeholder="请搜索您想要的商品" value="">
+                            <div class="img-camera">
+                                <img src="images/camera.png" alt="">
+                            </div>
+                            <img class="img-search" src="images/search.png" alt="">
+                            <ul class="input-ul">
+                                <li style="color:red">101减100</li>
+                                <li>立减3000</li>
+                                <li>农资畜牧</li>
+                                <li>户外年获</li>
+                                <li>领券满减</li>
+                                <li>摩托车跑车</li>
+                                <li>空气净化器</li>
+                                <li>京东超市</li>
+                                <li>京东超市</li>
+                                <li>计算器</li>
+                            </ul>
+                        </div>
+                        <div class="sh-car">
+                            <img src="images/购物车.svg">
+                            <span class="sh-t1">我的购物车</span>
+                            <span class="sh-t2">0</span>
+                        </div>
+                        <div class="sh-qr">
+                            <img src="images/QRcode1.png">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="sh-line">
+                    <ul class="line">
+                        <li>秒杀</li>
+                        <li>优惠券</li>
+                        <li>PLUS会员</li>
+                        <li style="border-right:1px solid lightgray;">闪购</li>
+                        <li>拍卖</li>
+                        <li>京东服饰</li>
+                        <li style="border-right:1px solid lightgray;">京东超市</li>
+                        <li>生鲜</li>
+                        <li>全球购</li>
+                        <li>京东金融</li>
+                    </ul>
+                </div>
+
+                <div id="carousel">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/sca1.jpg"></div>
+                        <div class="swiper-slide"><img src="images/sca2.jpg"></div>
+                        <div class="swiper-slide"><img src="images/sca3.jpg"></div>
+                        <div class="swiper-slide"><img src="images/sca4.jpg"></div>
+                        <div class="swiper-slide"><img src="images/sca5.jpg"></div>
+                        
+                        
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+
+                </div>
+
+                <div id="threePage">
+                    <img src="images/page1.jpg" >
+                    <img src="images/page2.jpg" style="margin:3px 0">
+                    <img src="images/page3.png" >
+                </div>
+
+                <div id="login-in">
+                    <img src="images/用户.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <button id="btn">获取 JSON 数据</button>
+    <div id="bttn">img</div>
+<!-- 轮播图插件-来自swiper.js -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+
+<!-- ajax jquery 调接口数据 -->
+  <script>
+      $(document).ready(function(){
+            $("#btn").click(function(){
+            htmlobj=$.ajax({url:"http://www.wsgjx.top/user/content/slide/index=22;size=10",async:true});
+            $("#bttn1").html(htmlobj.responseText);
+            });
+        });
+    
+    $.ajax({
+        url: "http://www.wsgjx.top/user/content/slide",
+        type: 'GET',
+        dataType: 'JSONP',//here
+        success: function (data) {
+            console.log('success')
+        }
+    });
+  </script>
+
 </body>
 </html>
