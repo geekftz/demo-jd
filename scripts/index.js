@@ -80,7 +80,7 @@ $(document).ready(function(){
         $('.navigate-text').css('backgroundColor','rgb(227,228,229)');
     })
 
-    $('.phone-text,.phone').hover(function(){
+    $('.phone-text,.phone,.ch-qrcode').hover(function(){
         $('.phone').show();
         $('.phone-text').css('background-color','#fff');
         $('.phone-text').css('border-left','.5px solid lightgray');
@@ -91,6 +91,38 @@ $(document).ready(function(){
         $('.phone-text').css('border-left','');
         $('.phone-text').css('border-right','');
         $('.phone-text').css('backgroundColor','rgb(227,228,229)');
+    })
+
+    $('#tabs1').mouseover(function(){
+        $('.tabs2-ul').hide();
+        $('.tabs1-ul').show();
+        if($('#tabs1').hasClass('act')){
+            return false;
+        }else{
+            $('#tabs1').addClass("act");
+            $('#tabs2').removeClass("act");
+        }
+    },function(){
+        $('.tabs1-ul').show();
+        $('.tabs2-ul').hide();
+        $('#tabs1').addClass("act");
+        $('#tabs2').removeClass("act");
+    })
+
+    $('#tabs2').mouseover(function(){
+        $('.tabs1-ul').hide();
+        $('.tabs2-ul').show();
+        if($('#tabs2').hasClass('act')){
+            return false;
+        }else{
+            $('#tabs2').addClass("act");
+            $('#tabs1').removeClass("act");
+        }
+    },function(){
+        $('#tabs2').addClass("act");
+        $('#tabs1').removeClass("act");
+        $('.tabs2-ul').show();
+        $('.tabs1-ul').hide();
     })
    
 

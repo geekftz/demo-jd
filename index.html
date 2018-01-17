@@ -315,7 +315,7 @@
                             <span class="sh-t2">0</span>
                         </div>
                         <div class="sh-qr">
-                            <img src="images/QRcode1.png">
+                            <img class="ch-qrcode" src="images/QRcode1.png">
                         </div>
                     </div>
                     
@@ -333,6 +333,7 @@
                         <li>全球购</li>
                         <li>京东金融</li>
                     </ul>
+                    <img class="newyear" src="images/newyear.png">
                 </div>
 
                 <div id="carousel">
@@ -362,15 +363,47 @@
                 </div>
 
                 <div id="login-in">
-                    <img src="images/用户.svg" alt="">
+                    <img class="img-login" src="images/用户.svg" alt="">
+                    <div class="login-text">
+                        <span>登陆</span>&nbsp;<span>注册</span>
+                    </div>
+                    <div class"btn-login">
+                        <button class="btn-newman">新人福利</button>
+                        <button class="btn-plus">PLUS会员</button>
+                    </div>
+                    <div class="tabs">
+                        <ul>
+                            <li id="tabs1" class="act">
+                                促销
+                                <ul class="tabs1-ul">
+                                    <li>品质配件，全场2件9折</li>
+                                    <li>中华老字号满199减100</li>
+                                    <li>年货盛宴好物1元秒</li>
+                                    <li>机票领券减70元</li>
+                                </ul>
+                            </li>
+                            <li id="tabs2">
+                                公告
+                                <ul class="tabs2-ul">
+                                    <li>京东启用全新客服电话“950618”</li>
+                                    <li>大家电订单超期自动取消公告</li>
+                                    <li>关于召回普利司通（天津）轮胎有限公司2个规格乘用车轮胎的公告</li>
+                                    <li>京东物流推出配送员统一外呼电话"95056”</li>
+                                </ul>
+                            </li>
+                            <li id="tabs3">
+                                更多
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                
             </div>
         </div>
 
     </div>
 
-    <button id="btn">获取 JSON 数据</button>
-    <div id="bttn">img</div>
+
 <!-- 轮播图插件-来自swiper.js -->
 <script>
     var swiper = new Swiper('.swiper-container', {
@@ -392,24 +425,7 @@
   </script>
 
 
-<!-- ajax jquery 调接口数据 -->
-  <script>
-      $(document).ready(function(){
-            $("#btn").click(function(){
-            htmlobj=$.ajax({url:"http://www.wsgjx.top/user/content/slide/index=22;size=10",async:true});
-            $("#bttn1").html(htmlobj.responseText);
-            });
-        });
-    
-    $.ajax({
-        url: "http://www.wsgjx.top/user/content/slide",
-        type: 'GET',
-        dataType: 'JSONP',//here
-        success: function (data) {
-            console.log('success')
-        }
-    });
-  </script>
+
 
 </body>
 </html>
